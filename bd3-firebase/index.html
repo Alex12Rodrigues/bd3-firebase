@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BD3 - FIREBASE</title>
+
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+</body>
+
+<!-- SDK DO FIREBASE -->
+<script src="https://www.gstatic.com/firebasejs/5.0.3/firebase-app.js"></script>
+
+
+<!-- SDK DO FIREBASE -->
+<script src="https://www.gstatic.com/firebasejs/5.0.3/firebase-firestore.js"></script>
+
+
+<!-- CONEXÃO COM O FIREBASE -->
+<script>
+
+    /*  DADOS DE CONEXÃO COM O FIREBASE  */
+    const firebaseConfig = {
+        apiKey: "AIzaSyD4H1lAw2e62TYE_K0ET8n6faVYMueswO8",
+        authDomain: "app-libri-alex.firebaseapp.com",
+        projectId: "app-libri-alex",
+        storageBucket: "app-libri-alex.appspot.com",
+        messagingSenderId: "684727502758",
+        appId: "1:684727502758:web:7b99cd866823a846a6f167",
+        measurementId: "G-K21EQ6X5ZM"
+    };
+
+    /* INICIALIZA O FIREBASE */
+    firebase.initializeApp(firebaseConfig)
+
+    /* INICIALIZA O FIRESTORE */
+    const db = firebase.firestore()
+    console.log(db)
+
+</script>
+
+<!-- IMPORTAÇÃO DO ARQUIVO app.js -->
+<script src="app.js"></script>
+
+
+</html>
